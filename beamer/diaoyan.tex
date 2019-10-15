@@ -1,0 +1,70 @@
+\documentclass[uft8]{ctexbeamer}
+\usepackage{tikz}
+\usepackage[european]{circuitikz}
+% \setbeamertemplate{title page}
+% {
+%   \centering
+%   \usebeamerfont{title}\inserttitle\par
+%   \usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par
+%   \bigskip
+%   \usebeamerfont{subtitle}\insertauthor\par
+%   \usebeamerfont{institute}\insertinstitute\par
+%   \vspace{1em}
+%   \usebeamerfont{date}\insertdate\par
+%   \usebeamercolor[fg]{titlegraphic}\inserttitlegraphic
+% }
+
+
+
+\usetheme{Singapore}
+% \usecolortheme{orchid}
+
+\definecolor{mycolor}{RGB}{51,51,178}
+\setbeamercolor{title}{fg=mycolor}
+\setbeamerfont{title}{size=\huge}
+
+\setbeamercolor{author}{fg=black}
+\setbeamerfont{author}{size=\large}
+
+\setbeamercolor{date}{fg=black}
+\setbeamerfont{date}{size=\normalsize}
+
+\title{论文调研}
+% \subtitle{柔性开关}
+\author{李帅奇}
+\date{\today}
+
+\setbeamertemplate{title page}
+{
+  \centering
+  \usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par
+  % \usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par
+  \vspace{1.5em}
+  \usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor\par
+  \vspace{0.5em}
+  \usebeamerfont{date}\usebeamercolor[fg]{date}\insertdate\par
+}
+\begin{document}
+{
+  \usebackgroundtemplate{\includegraphics[width=1.0\paperwidth]{pic/background.png}}
+  \begin{frame}[plain]
+    \vspace{8em}
+    \maketitle
+  \end{frame}
+}
+
+\section{黑箱}
+\subsection{黑箱处理}
+
+\begin{frame}[t]{black box}
+\begin{itemize}[<+->]
+\item 测试
+
+aaa
+
+\item black box
+
+\end{itemize}
+\tikz \draw (0,0) to[R=$R_1$] (2,0);  
+\end{frame}
+\end{document}
